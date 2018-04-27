@@ -35,7 +35,8 @@ def init_data():
     print X_para,'\n',Y_para
     return X_para,Y_para
 
-#线性回归计算
+
+# 线性回归计算
 def linear_model_main(X,Y,predict_value):
     regr = linear_model.LinearRegression()
     regr.fit(X, Y)
@@ -46,7 +47,8 @@ def linear_model_main(X,Y,predict_value):
     predictions['predicted_value'] = predict_outcome
     return predictions
 
-#回归结果展示
+
+# 回归结果展示
 def show_linear_line(X_parameters,Y_parameters):
     regr = linear_model.LinearRegression()
     regr.fit(X_parameters, Y_parameters)
